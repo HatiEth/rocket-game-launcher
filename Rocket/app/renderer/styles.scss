@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000 !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    & > .hello {
+        text-align: center;
+        h1 {
+            font-family: "Arial";
+            color: whitesmoke;
+            &.title {
+                font-size: 80;
+            }
+        }
+        img.logo {
+            width: 512px;
+            height: 512px;
+        }
+    }
+}
+
+.project-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+
+    & li {
+        position: relative;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        box-shadow: inset 0 0 1em 1em #000;
+        background-color: #000;
+        cursor: pointer;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     box-shadow: inset 0px 0px 1rem 1rem rgba(0, 0, 0, 0.8);
+        // }
+        filter: grayscale(75%);
+        transition: 0.5s ease-in-out;
+        &:hover {
+            filter: grayscale(0%);
+            & img {
+                object-fit: none;
+                width: auto;
+            }
+        }
+
+        .imagecontainer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+                overflow: hidden;
+            }
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            box-shadow: inset 0 0 1em 1em rgba(0, 0, 0, 1);
+        }
+        .videocontainer {
+            position: relative;
+        }
+        video {
+            height: 100%;
+            width: auto;
+        }
+        // position: relative;
+        // height: 100%;
+        // .vignette {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+
+        //     box-shadow: inset 0px 0px 1rem 1rem rgba(0, 0, 0, 0.8);
+        // }
+
+        // & img {
+        //     width: 100%;
+        //     height: auto;
+        //     color: #777;
+        //     filter: grayscale(75%);
+        //     transition: 0.5s ease-in-out;
+        //     user-select: none;
+        //     &:hover {
+
+        //         filter: grayscale(0%);
+        //     }
+        // }
+    }
+}

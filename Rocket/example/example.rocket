@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "title": "PepaFatal",
+            "executeable": "~\\PepaFatal\\PepaFatal.bat",
+            "banner": "~\\PepaFatal\\logo.png"
+        },
+        {
+            "title": "CubeLink",
+            "executeable": "~\\CubeLink\\Kugelkoenig.bat",
+            "banner": "~\\CubeLink\\logo.gif"
+        },
+        {
+            "title": "RebeatIt!",
+            "executeable": "~\\RebeatIt\\RebeatIt.bat",
+            "banner": "~\\RebeatIt\\logowebm.webm",
+            "isvideo": true
+        }
+    ]
+}

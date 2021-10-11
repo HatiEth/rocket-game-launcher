@@ -1,0 +1,13 @@
+{
+    "title": "Rocket Game Launcher",
+    "main": {
+      "sourceDirectory": "app/main"
+    },
+    "renderer": {
+      "sourceDirectory": "app/renderer",
+      "template": "app/renderer/index.html",
+      "webpackConfig": "webpack.renderer.config.js"
+    },
+    "commonSourceDirectory": "app/common",
+    "staticSourceDirectory": "app/static"
+  }

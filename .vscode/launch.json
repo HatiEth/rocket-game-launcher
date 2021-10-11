@@ -1,0 +1,11 @@
+{
+	"configurations": [
+		{
+			"command": "yarn dev",
+			"name": "Yarn dev",
+			"request": "launch",
+			"type": "node-terminal",
+			"cwd": "${workspaceFolder}/Rocket"
+		}
+	]
+}
