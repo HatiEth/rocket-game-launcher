@@ -15,10 +15,10 @@ function getVersion() {
 import './styles.scss';
 
 import logo from './Logo.svg'
-import {MESSAGES} from 'common/messages';
+import { MESSAGES } from 'common/messages';
 
 // export a react component
-export default ( props ) => {
+export default (props) => {
 
     function loadRocketfile() {
         const file = remote.dialog.showOpenDialogSync(remote.BrowserWindow, {
@@ -28,20 +28,23 @@ export default ( props ) => {
             ],
             title: "Load .rocket file"
         });
-        if (file && file.length>0) {
+        if (file && file.length > 0) {
             const R = ipcRenderer.sendSync(MESSAGES.OPEN_ROCKETFILE, file[0]);
             console.log(R);
         }
     }
-    
+
     return (
         <div className='hello'>
-            <h1>Rocket Game Launcher</h1>
-            <img className="logo" src={logo} alt="" />
-            <h1>Select a rocket file.</h1>
-            <button
-                onClick={ () => loadRocketfile() }
-            >Browse file</button>
+            <div className="launch">
+                <img className="logo" src={logo} alt="" />
+                <h1 className="title">Rocket Game Launcher</h1>
+                <h1>Select a rocket file.</h1>
+                <button
+                    onClick={() => loadRocketfile()}
+                >Browse file</button>
+
+            </div>
         </div>
     );
 };

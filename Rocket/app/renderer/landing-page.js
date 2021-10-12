@@ -42,9 +42,7 @@ export default class LandingPage extends React.Component {
 		}
 		else {
 			return (
-				<div className="hello">
-					<Entry/>
-				</div>
+				<Entry/>
 			)
 
 		}
