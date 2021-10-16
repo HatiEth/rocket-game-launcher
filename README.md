@@ -1,4 +1,4 @@
-Rocket Game Launcher
+# Rocket Game Launcher
 
 A open-sourced project configurable game launcher useful for presentating multiple games at once at a venue in a compact view for players.
 
