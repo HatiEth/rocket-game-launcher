@@ -42,7 +42,7 @@ It is adviced to use yarn, as npm does not install dependencies correctly.
 
 You may want to create a standalone application for venues or sites, as you wouldn't have to deal with the setup process on a showcase machine.
 
-You can build it yourself for windows using `yarn dist` or `npm run dist`.
+You can build it yourself for windows using `yarn dist`.
 
 Other OS apps are currently untested and may need some tinkering 🙂.
 
